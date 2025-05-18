@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+
+  <!-- Load an icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Nick's Portfolio | Contact</title>
+</head>
+
+<body>
+  <div class="box">
+    <!-- For top navigation/contact info -->
+    <div class="sidebar">
+      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <!-- Coming back to this later once I get ideas
+      <a href=""><i class="fa fa-fw fa-wrench"></i></a>
+      <a href=""><i class="fa fa-fw fa-user"></i></a>
+      -->
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+
+    <!-- Introducing myself, and welcoming visitors to my page -->
+    <div class="intro-box">
+      <h1>Get in touch</h1>
+    </div>
+
+    <!-- Form for contact -->
+    <div class="container">
+      <form action="action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="brazil">Brazil</option>
+          <option value="canada">Canada</option>
+          <option value="usa">United States</option>
+        </select>
+        <label for="subject">Subject</label required>
+        <textarea id="subject" name="subject" placeholder="Subject (e.g. Freelance project, job opportunity, question)"
+          style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <!-- Linking my platforms/socials -->
+    <div class="my-links">
+      <h2 class="link_heading">My Links</h2>
+      <a href="https://linkedin.com/in/nickolas-moreira" target="_blank">
+        <button class="link-button">
+          <i class="fa fa-linkedin-square"></i> LinkedIn
+        </button>
+      </a>
+      <a href="https://github.com/yourusername" target="_blank">
+        <button class="link-button">
+          <i class="fa fa-github"></i> GitHub
+        </button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

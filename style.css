@@ -1,0 +1,191 @@
+/* Body Styles/Background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #013A63;
+  font-family: Arial, sans-serif;
+  color: #A9D6E5;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #013A63;
+  padding-top: 16px;
+}
+
+/* gived the side bar padding and bigger font size */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #A9D6E5;
+  display: block;
+}
+
+/* Hover underline effect */
+.sidebar a:hover {
+  color: #CAF0F8;
+  text-decoration: underline;
+}
+
+/* creating more space between menu options */
+.sidebar a {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Main content box */
+.box {
+  max-width: 70%;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0; /* Add this line */
+  background-color: #025B8A;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers (H1, H2) */
+.home-headers, h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* For font size resposivness */
+h1 {
+  font-size: clamp( 0.2rem, calc(1vw + 1rem), 5rem);
+ /* font-size: 36px; */
+  color: #A9D6E5;
+}
+
+h2 {
+ /* font-size: 28px; */
+  color: #A9D6E5;
+  margin-left: 0.5%;
+}
+
+/* Paragraph Styles */
+p {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 18px;
+  color: #89C2D9;
+}
+
+/* Link Styles */
+a {
+  color: #A9D6E5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+  .sidebar a {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  /* More adjustments for container */
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  overflow-x: hidden; 
+}
+
+/* Intro Box */
+.intro-box {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #012A4A;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  border-top: 2px solid #89C2D9;
+  padding-top: 20px;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #012A4A;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 250px;
+  color: #A9D6E5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card h3 {
+  margin: 10px 0 5px;
+}
+
+.project-card p {
+  margin: 0 10px 10px;
+  font-size: 14px;
+  color: #89C2D9;
+}
+
+/* For responsivness on mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #013A63;
+    padding: 10px 0;
+  }
+   .sidebar ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   }
+
+   .sidebar li {
+    list-style: none;
+    padding: 0 10px;
+   }
+   
+   /* Prevents the nav bar from cutting off content */
+   .box {
+    margin-top: 70px;
+   }
+}

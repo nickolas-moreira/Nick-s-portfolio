@@ -1,0 +1,73 @@
+/* For form in contact page */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #013A63;
+  color: #CAF0F8;
+  border: 2px solid #A9D6E5;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #89C2D9;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #025B8A;
+  padding-top: 2%;
+}
+
+.my-links {
+  margin-top: 50px;
+  border-top: 2px solid #89C2D9;
+  padding-top: 20px;
+}
+
+/* for links in contact */
+.my-links {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.link_heading {
+  align-items: left;
+}
+
+.link-button {
+  font-size: 20px;
+  background-color: #012A4A;
+  color: #A9D6E5;
+  border: 2px solid #A9D6E5;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  gap: 10px;
+  min-width: 200px; /* Set a base width */
+  justify-content: center;
+}
+
+.link-button:hover {
+  background-color: #01497C;
+  color: #CAF0F8;
+  border-color: #CAF0F8;
+}
